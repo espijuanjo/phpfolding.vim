@@ -72,6 +72,10 @@ endif
 let loaded_phpfolding = 1
 " }}}
 
+" .vimrc variable to maintaining autofolding but not showing folds by default
+if !exists("g:DisableDefaultAutoPHPFoldingBehaviour")
+    let g:DisableDefaultAutoPHPFoldingBehaviour = 0
+endif
 " .vimrc variable to disable autofolding for php files {{{1
 if !exists("g:DisableAutoPHPFolding")
 	let g:DisableAutoPHPFolding = 0
@@ -145,7 +149,11 @@ function! s:EnablePHPFolds(...) " {{{
 	let s:foldsCreated = 0
 	call s:PHPCustomFolds()
 	" .. Fold all
-	normal! zM
+    if !get(g:, 'DisableDefaultAutoPHPFoldingBehaviour')
+        normal! zM
+    else
+        normal! zn
+    endif
 
 	" Restore previously opened folds
 	let currentItem = 0

@@ -82,3 +82,19 @@ COMPATIBILITY
 
 This script is tested successfully with Vim version >= 6.3 on windows and linux
 (With 6.0 it works *sometimes*, I don't recommend using it in that version)
+
+OPTIONS
+--------
+
+I had a hard time trying to make this plugin create the folds and maintain them
+open when a file was just opened. You can use this **new** option in your .vimrc:
+
+`let g:DisableDefaultAutoPHPFoldingBehaviour = 1`
+
+This will set the foldings but will maintain them open when you open a file. If
+you want to fold everything you can use:
+
+`zm` in normal mode
+`zn` to unfold everything again...
+
+
