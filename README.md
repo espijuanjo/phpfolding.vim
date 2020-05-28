@@ -42,7 +42,11 @@ function fooFunction($bar)
 
 SCREENSHOT
 ----------------
-You can view a screenshot here: http://blog.cppse.nl/phpfolding-vim
+After you open the file all is normal:
+![just opened file](screenshots/2020-05-28-1590646436_screenshot_827x705.jpg "just opened file")
+And after you press `zm`
+![after zm](screenshots/2020-05-28-1590646466_screenshot_682x237.jpg "after zm")
+
 
 FEATURES
 ----------------
