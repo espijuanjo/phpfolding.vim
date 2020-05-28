@@ -1,7 +1,7 @@
 Abstract
 ===============
 
-This is a mirror of http://www.vim.org/scripts/script.php?script_id=1623
+This is a fork of http://www.vim.org/scripts/script.php?script_id=1623
 
 This script can fold PHP functions and/or classes, properties with their phpdoc
 without manually adding marker style folds ({{{ and }}}). 
